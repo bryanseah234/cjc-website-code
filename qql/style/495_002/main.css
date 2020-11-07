@@ -1,0 +1,152 @@
+ .pagecontent_box,.content_area{
+    padding-top:0;
+  }
+  .sidebar0_box,.sidebar1_box{
+    padding:0;
+    margin:0;
+  }
+  .sidebar_area {
+    display:none;
+  }
+  #cjc_slider {
+    position:relative;
+    background: url(../../slot/u495/style/home/goldline1200.png) no-repeat left bottom;
+    width:1200px;
+    height:607px;
+    left:-120px;
+    top:0;
+  }
+  #wrapper {
+    display:block;
+    position:absolute;
+  }
+  #slider-wrapper {
+    width:1200px;
+    height:600px;
+    margin:0 0 0 0;
+    padding-top:0px;
+  }
+  #slider {
+    position:relative;
+    width:1200px;
+    height:600px;
+    margin-left:0px;
+    background:url(../../slot/u495/style/slider/loading.gif) no-repeat 50% 50%;
+  }
+  #slider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+  }
+  #slider a {
+    border:0;
+    display:block;
+  }
+  .nivo-caption{
+    display:none;
+  }
+  .nivo-controlNav {
+    text-align: center;
+    padding: 0;
+    position:absolute;
+    top:540px;
+    left:135px;
+    z-index:10;
+  }
+  .nivo-controlNav a {
+    display:inline-block;
+    width:160px;
+    height:50px;
+    background-color:#c5960c;
+    color:#fff;
+    font-weight:bold;
+    opacity:0.8;
+    -moz-opacity:0.8;
+    filter:alpha(opacity=80);
+    border:0;
+    margin: 0 2px;
+    text-align:left;
+    padding:5px 10px;
+    text-decoration:none;
+  }
+  .nivo-controlNav a.active {
+    opacity:1;
+    -moz-opacity:1;
+    filter:alpha(opacity=100);
+  }
+  .nivo-directionNav{
+    position:relative;
+  }
+  .nivo-directionNav a {
+    display:block;
+    width:18px;
+    height:30px;
+    position:absolute;
+    z-index:10;
+    text-indent:-9999px;
+    border:0;
+    opacity: 0;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+  }
+  .nivo-directionNav a {
+    opacity: 1;
+  }
+  a.nivo-nextNav {
+    background: url(../../slot/u495/style/home/arrowright_off.png) no-repeat;
+    width:18px;
+    height:30px;
+    top:-40px;
+    right:110px;
+  }
+  a.nivo-nextNav:hover {
+    background: url(../../slot/u495/style/home/arrowright_on.png) no-repeat;
+    width:18px;
+    height:30px;
+  }
+  a.nivo-prevNav {
+    background: url(../../slot/u495/style/home/arrowleft_off.png) no-repeat;
+    width:18px;
+    height:30px;
+    top:-40px;
+    left:100px;
+  }
+  a.nivo-prevNav:hover {
+    background: url(../../slot/u495/style/home/arrowleft_on.png) no-repeat;
+    width:18px;
+    height:30px;
+  }
+  .header {
+    color:#9f1d26;
+    font-size:28px;
+    font-weight:bold;
+    border-bottom:5px solid #c5960c;
+    font-family: 'optimamedium';
+    text-align:left;
+  }
+  .divider{
+    border-bottom:1px solid  #213b81;
+  }
+  .title{
+    color:#213b81;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:0!important;
+    font-family: 'optimamedium';
+  }
+  .details{
+    font-size:14px;
+  }
+  .iveo_pipe_latest_home{
+    margin-top:5px;
+  }
+.hl_title{
+   color:#213b81;
+  font-weight:bold;
+}
+.latest-item td, .articles-item td {padding:8px 0;}
+
+tr.latest-item,tr.articles-item {background: url(../../slot/u495/style/line.jpg) no-repeat left bottom;}
