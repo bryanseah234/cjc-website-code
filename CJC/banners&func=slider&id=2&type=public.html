@@ -1,0 +1,304 @@
+<link rel='stylesheet' type='text/css' id='base_css' href='../skin/wbn/base.html'> 
+
+<link rel='stylesheet' type='text/css' id='main_css' href="../style/495_001/main.html?1556156510"> 
+
+<script type="text/javascript" src="../site/ctx/jquery/jquery.js"></script>
+
+<script type="text/javascript" src="../skin/qql/happenings/slider/script_cjc.js"></script>
+<!--<script type="text/javascript" src="/skin/qql/happenings/slider/scripts.js"></script>-->
+
+<script type="text/javascript">
+if(!window.slider) var slider={};
+slider.navEach = 5;
+slider.navType = "";
+slider.sliderWidth= 1200;
+slider.pauseTime = 8*1000; 
+</script>
+
+<style>
+#caption { display:none;}
+@font-face {
+    font-family: 'optimamedium';
+    src: url('../qql/slot/u495/style/font/optima_medium-webfont.eot');
+    src: url('../qql/slot/u495/style/font/optima_medium-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../qql/slot/u495/style/font/optima_medium-webfont.woff2') format('woff2'),
+         url('../qql/slot/u495/style/font/optima_medium-webfont.woff') format('woff'),
+         url('../qql/slot/u495/style/font/optima_medium-webfont.ttf') format('truetype'),
+         url('../qql/slot/u495/style/font/optima_medium-webfont.svg#optimamedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+BODY {
+    font-family: Calibri;
+    line-height: 140%;
+    margin:0px;
+}
+
+div.wrap {
+width : 1200px;
+height : 600px;
+margin : 0 auto;
+text-align : left;
+float:left;
+}
+div#slide-holder {
+z-index : 40;
+width : 1200px;
+height : 600px;
+position : absolute;
+float:left;
+}
+div#slide-content-holder {
+width:1200px;
+height:600px;
+position:absolute;
+color:#fff;
+}
+div#slide-holder div#slide-runner {
+top : 0px;
+left : 0px;
+width : 1200px;
+height : 600px;
+overflow : hidden;
+position : absolute;
+}
+div#slide-holder img {
+width : 1200px;
+height : 600px;
+position : absolute;
+}
+div#slide-holder div#slide-controls {
+width : 1200px;
+height : 80px;
+xdisplay : none!important;
+position : absolute;
+left : 0px;
+bottom : 0px;
+}
+div#slide-holder div#slide-controls div.text {
+float : left;
+color : #fff;
+display : block;
+font-size : 12px;
+line-height : 16px;
+margin : 15px 0 0 20px;
+Xtext-transform : uppercase;
+}
+div#slide-holder div#slide-controls table#slide-nav-container {
+display:block;
+margin:0 auto;
+position:absolute;
+top:20px;
+left:100px;
+}
+div#slide-holder div#slide-controls div#slide-nav-prev {
+width:18px;
+height:30px;
+float:left;
+background:url(../qql/slot/u495/style/home/arrowleft_on.png) no-repeat;
+cursor:pointer;
+}
+div#slide-holder div#slide-controls div#slide-nav-prev.off {
+background:url(../qql/slot/u495/style/home/arrowleft_off.png) no-repeat;
+width:18px;
+height:30px;
+}
+div#slide-holder div#slide-controls div#slide-nav-next {
+width:18px;
+height:30px;
+float:right;
+background:url(../qql/slot/u495/style/home/arrowright_on.png) no-repeat;
+cursor:pointer;
+}
+div#slide-holder div#slide-controls div#slide-nav-next.off {
+background:url(../qql/slot/u495/style/home/arrowright_off.png) no-repeat;
+width:18px;
+height:30px;
+}
+div#slide-holder div#slide-controls div#slide-nav {
+height : 34px;
+display : block;
+float:left;
+margin-left : 5px;
+overflow:hidden;
+position:relative;
+width:920px;
+}
+div#slide-holder div#slide-controls div#slide-nav a {
+float : left;
+Xwidth : 64px;
+Xheight : 34px;
+display : block;
+font-size : 11px;
+margin : 0 5px 0 0;
+Xline-height : 34px;
+Xfont-weight : bold;
+text-align : center;
+text-decoration : none;
+background-position : 0 0;
+background-repeat : no-repeat;
+}
+div#slide-holder div#slide-controls div#slide-nav a.on {
+Xbackground-position : 0 -24px;
+Xborder:2px solid red;
+}
+div#slide-holder div#slide-controls div#slide-nav a {
+Xbackground-image : url(images/silde-nav.html);
+}
+div#slide-holder div#slide-controls div#slide-nav .thumb {
+width:60px;
+height:30px;
+display:block;
+border:2px solid transparent;
+}
+div#slide-holder div#slide-controls div#slide-nav .thumb.on {
+border:2px solid red;
+}
+
+div#slide-content-holder  div.slide-content {
+display:none;
+position:absolute;
+top:0px;
+left:0px;
+}
+div#slide-content-holder  div.slide-content.active{
+display:block;
+}
+div#slide-content-holder  div.slide-content.last-active{
+display:none;
+opacity:0;
+}
+
+div#slide-holder div#slide-controls div#slide-nav a {
+ width:160px;
+ height:50px;
+ background-color:#c5960c;
+ color:#fff;
+ font-weight:bold;
+ font-size:18px;
+ opacity:0.8;
+ -moz-opacity:0.8;
+ filter:alpha(opacity=80);
+ border: 0;
+ margin: 0 2px;
+ text-align: left;
+ padding: 5px 10px;
+ text-decoration:none;
+ word-break:break-all;
+font-family:optimamedium;
+}
+
+div#slide-holder div#slide-controls div#slide-nav {
+height:60px;
+}
+
+div#slide-holder div#slide-controls div#slide-nav a.on {
+ opacity:1;
+ -moz-opacity:1;
+ filter:alpha(opacity=100);
+}
+
+div#slide-holder .cap_img{
+position:absolute;
+}
+@media only screen and (max-device-width: 450px), only screen and (max-width: 450px)
+{
+div.wrap {
+    width: 100% !important;
+    height: 210px !important;
+}
+
+div#slide-holder {
+    width: 100% !important;
+    height: 210px !important;
+}
+
+div#slide-holder div#slide-runner {
+    width: 100% !important;
+    height: 210px !important;
+}
+
+div#slide-holder img {
+    width: 100% !important;
+    height: 210px !important;
+}
+
+div#slide-holder div#slide-controls {
+    display: none !important;
+}
+div#slide-content-holder {
+    display: none !important;
+}
+} 
+</style>
+
+<div class="wrap">
+   <div id="slide-holder">
+	<div id="slide-runner">
+									<a href="highlights/thinker-with-a-mission-leader-with-a-heart-series-3.html" target="_top">
+							<img id="slide-img-1" src="../qql/slot/happenings/ie01/a603a79ca_116.jpg" class="slide" alt="" />
+							</a>
+						
+									<img id="slide-img-2" src="../qql/slot/happenings/ie01/14de9de78_119.jpg" class="slide" alt="" />
+						
+									<a href="../about.html" target="_blank">
+							<img id="slide-img-3" src="../qql/slot/happenings/ie01/880cdb2f6_120.jpg" class="slide" alt="" />
+							</a>
+						
+									<a href="../education.html" target="_blank">
+							<img id="slide-img-4" src="../qql/slot/happenings/ie01/5fb1495bb_121.jpg" class="slide" alt="" />
+							</a>
+						
+									<a href="news/2020/cjc-celebrates-her-45th-anniversary.html" target="_blank">
+							<img id="slide-img-5" src="../qql/slot/happenings/ie01/a144d9f62_212.jpg" class="slide" alt="" />
+							</a>
+						
+			</div>
+		<div id="slide-controls">
+			<div id="slide-client" class="text"><span></span></div>
+			<table id="slide-nav-container" cellspacing=0 cellpadding=0><tr>
+				<td><div id="slide-nav-prev"></div></td>
+				<td><div id="slide-nav"></div></td>
+				<td><div id="slide-nav-next"></div></td>
+			</tr></table>
+		</div>
+	<!--content featured gallery here -->
+   </div>
+   
+   <div id="slide-content-holder">
+			<div id="slide-content-1" class="slide-content active">
+			<div class="slide-content-title">Our CJ Story</div>
+			<div class="slide-content-desc"></div>
+						<div class="slide-content-readmore"><a href="highlights/thinker-with-a-mission-leader-with-a-heart-series-3.html" target="_top">[click for more]</a></div>
+					</div>
+			<div id="slide-content-2" class="slide-content ">
+			<div class="slide-content-title">School Distinction <br> Award</div>
+			<div class="slide-content-desc"></div>
+					</div>
+			<div id="slide-content-3" class="slide-content ">
+			<div class="slide-content-title">About Us</div>
+			<div class="slide-content-desc"></div>
+						<div class="slide-content-readmore"><a href="../about.html" target="_blank">[click for more]</a></div>
+					</div>
+			<div id="slide-content-4" class="slide-content ">
+			<div class="slide-content-title">CJC's Education</div>
+			<div class="slide-content-desc"></div>
+						<div class="slide-content-readmore"><a href="../education.html" target="_blank">[click for more]</a></div>
+					</div>
+			<div id="slide-content-5" class="slide-content ">
+			<div class="slide-content-title">CJC celebrates her 45th Anniversary</div>
+			<div class="slide-content-desc">CJC celebrates 45 years of building generations in Truth and Love</div>
+						<div class="slide-content-readmore"><a href="news/2020/cjc-celebrates-her-45th-anniversary.html" target="_blank">[click for more]</a></div>
+					</div>
+	   </div>
+   <div id="caption">
+				<div id="title_0">Our CJ Story</div>
+				<div id="title_1">School Distinction <br> Award</div>
+				<div id="title_2">About Us</div>
+				<div id="title_3">CJC's Education</div>
+				<div id="title_4">CJC celebrates her 45th Anniversary</div>
+		</div>
+</div>
+
+ 
