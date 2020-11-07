@@ -1,0 +1,89 @@
+table.event {
+  width:100%;
+  Xborder-collapse:collapse;
+  border:1px solid #EAEAEA;
+  padding:1px;
+}
+table.event td {
+ color:#222; 
+}
+table.event a {
+ color:#222; 
+}
+
+table.event td.cal_holiday_label {
+  background:#FF7E00;
+  font-weight: bold;
+  color: #FFF;
+}
+table.event td.cal_weekday_label {
+  background:#A0A0A0;
+  font-weight: bold;
+  color: #FFF;
+}
+.cal_holiday { background: #FFEFE1; }
+.cal_weekday { background: #EAEAEA; color: #000; }
+.cal_holiday_today { background: #FFD7B3; }
+.cal_weekday_today { background: #E4FF95; }
+
+table.cal_event {
+  width:100%;
+  border:1px dashed #CCB800;
+  background:#FFFBD5;
+  margin-bottom:5px;
+  border-top: 5px solid #CCB800;
+  color:#000;
+}
+table.cal_event th {
+  background:#E2DDBA;
+}
+table.cal_event td {
+  color:#000;
+}
+.ev_sep {
+  Xborder-top:2px dashed #fff;
+}
+
+.cal_tags {
+  font-size:70%;
+  opacity:0.7; filter:alpha(70);
+}
+
+.cal_time, .cal_time_label{
+  font-size:70%;
+  font-style:italic;
+  font-weight:normal;
+}
+table.event .cal_time {
+  color:#222;
+}
+table.event a {
+  color:#222!important;
+  text-decoration: underline;
+}
+
+.cal_vert_line {
+  display:block;
+}
+
+
+/* ------------------ */
+.cal_pagetree {
+  width:100%;
+  background:#fff;
+  margin-bottom:5px;
+  border-right: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  color:#000;
+}
+table.cal_pagetree_holiday {
+  width:100%;
+}
+table.cal_pagetree_holiday td {
+  font-weight: bold;
+  color:#ebaa96;
+}
+table.cal_pagetree_holiday .cal_tags {
+ display:none;
+}
+
